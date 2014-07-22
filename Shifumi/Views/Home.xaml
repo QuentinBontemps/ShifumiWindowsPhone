@@ -1,0 +1,89 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Shifumi.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:converters="clr-namespace:Shifumi.Converters"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+
+    <phone:PhoneApplicationPage.Resources>
+        <converters:BooleanToVisibilyConverter x:Key="BooleanToVisibilyConverter"/>
+    </phone:PhoneApplicationPage.Resources>
+
+
+
+    <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contient le nom de l'application et le titre de la page-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="SHIFUMI" Style="{StaticResource PhoneTextLargeStyle}"/>
+        </StackPanel>
+
+        <!--ContentPanel - placez tout contenu supplémentaire ici-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Text="Choose your action" HorizontalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}"/>
+            <Button Grid.Row="1" Grid.Column="0" x:Name="btnPierre" Command="{Binding ActionCommand}" CommandParameter="Stone">
+                <Image Source="../Assets/Images/Stone.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="1" x:Name="btnPapier"  Command="{Binding ActionCommand}" CommandParameter="Paper">
+                <Image Source="../Assets/Images/Paper.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" x:Name="btnCiseau"  Command="{Binding ActionCommand}" CommandParameter="Scissors">
+                <Image Source="../Assets/Images/Scissors.png" />
+            </Button>
+
+            <TextBlock Text="{Binding ActionChoosed}" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+
+            <TextBlock Text="Round :" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" Grid.Row="3" Grid.ColumnSpan="2" />
+            <TextBlock Text="{Binding CurrentRound, Mode=TwoWay}" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="3" />
+
+            <TextBlock Text="Temps restant :" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" Grid.Row="4" Grid.ColumnSpan="2" />
+            <TextBlock Text="{Binding CountDown, Mode=TwoWay}" Style="{StaticResource PhoneTextLargeStyle}" Grid.Row="4" Grid.Column="2" Margin="0,0,76,0" HorizontalAlignment="Left" />
+
+
+            <Button Content="Send" Grid.Row="5" Grid.ColumnSpan="3"  Command="{Binding SendCommand, Mode=TwoWay}" />
+
+
+            <TextBlock Text="Your score :" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding YourScore, Mode=TwoWay}" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" />
+            <Button Command="{Binding ScoreBoardCommand}" Content="All Scores" Grid.Row="6" Grid.Column="2"/>
+
+            <TextBlock Text="Best score :" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding BestUser, Mode=TwoWay}" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="7" Grid.Column="1" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding BestScore, Mode=TwoWay}" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="7" Grid.Column="2" VerticalAlignment="Center" />
+            
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

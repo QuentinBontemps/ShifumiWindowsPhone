@@ -1,0 +1,17 @@
+﻿<xapCache source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Bin\Debug\Shifumi_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="20/06/2014 16:54:21">
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\obj\Debug\Shifumi.dll" archivePath="Shifumi.dll" lastWriteTime="20/06/2014 16:54:20" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="16/06/2014 15:54:36" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Assets\Images\Scissors.png" archivePath="Assets\Images\Scissors.png" lastWriteTime="16/06/2014 16:15:31" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Assets\Images\Paper.png" archivePath="Assets\Images\Paper.png" lastWriteTime="16/06/2014 16:15:31" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Assets\Images\Stone.png" archivePath="Assets\Images\Stone.png" lastWriteTime="16/06/2014 16:15:31" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="16/06/2014 15:54:36" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="16/06/2014 15:54:36" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="16/06/2014 15:54:36" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="16/06/2014 15:54:36" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="17/06/2014 14:42:41" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="16/06/2014 15:54:36" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="16/06/2014 15:54:36" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="17/06/2014 14:38:15" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="17/06/2014 14:38:15" />
+  <file source="e:\mes documents\visual studio 2013\Projects\Shifumi\Shifumi\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="17/06/2014 11:05:48" />
+</xapCache>
